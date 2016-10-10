@@ -1,4 +1,9 @@
 @import meyer-reset
+// Variables
+$accent-color: #3e65ff
+$animation-duration: 500ms
+
+
 
 // General Styling
 *,
@@ -10,10 +15,27 @@
 // Typography
 body
     font:
-        family: 'Roboto', 'Helvetica Neue', helvetica, verdana, sans-seriv
+        family: 'Roboto', 'Helvetica Neue', helvetica, verdana, sans-serif
         size:   20px
     text-align: center
     color: white
+
+a
+    color: white
+
+a:hover .material-icons
+    animation: pulse $animation-duration infinite ease-in-out alternate
+    color: $accent-color
+
+@keyframes pulse
+    0%
+        transform: scale(1)
+    100%
+        transform: scale(1.1)
+
+.material-icons
+    font-size: 40px
+    transition: $animation-duration
 
 
 // Grid
@@ -49,3 +71,8 @@ body
         size:   3em
         weight: 100
     margin-bottom: 1em
+
+
+// Links Section
+#links
+    background-color: white
