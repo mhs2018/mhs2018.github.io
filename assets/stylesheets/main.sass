@@ -1,6 +1,6 @@
 @import meyer-reset
 // Variables
-$accent-color: #3e65ff
+$accent-color: #5b7fff
 $animation-duration: 500ms
 
 
@@ -19,7 +19,7 @@ body
         size:   20px
     text-align: center
     color: white
-
+    -webkit-font-smoothing: antialiased
 a
     color: white
 
@@ -31,12 +31,17 @@ a:hover .material-icons
     0%
         transform: scale(1)
     100%
-        transform: scale(1.1)
+        transform: scale(1.25)
 
 .material-icons
     font-size: 40px
     transition: $animation-duration
+    position: absolute
 
+.section-header
+    color: $accent-color
+    font-size: 2em
+    margin: 1em 
 
 // Grid
 .content-section
