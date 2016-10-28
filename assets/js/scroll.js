@@ -1,6 +1,6 @@
 var $root = $('html, body');
 
-$('a').click(function(event) {
+$('a[href="#links"]').click(function(event) {
     event.preventDefault();
 
     $root.animate({
