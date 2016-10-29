@@ -72,7 +72,7 @@ a:hover .scroll {
     transform: scale(1); }
   100% {
     transform: scale(1.15); } }
-.material-icons {
+.scroll {
   font-size: 3em;
   transition: 500ms all ease-in-out; }
 
@@ -91,7 +91,7 @@ strong {
 
 .vert-center {
   width: 100%;
-  padding: 2em;
+  padding: 1.25em;
   position: absolute;
   left: 50%;
   top: 50%;
