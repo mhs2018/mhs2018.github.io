@@ -1,5 +1,5 @@
+//Scrolling
 var $root = $('html, body');
-
 $('a[href="#links"]').click(function(event) {
     event.preventDefault();
 
