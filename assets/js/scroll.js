@@ -5,5 +5,5 @@ $('a[href="#links"]').click(function(event) {
 
     $root.animate({
         scrollTop: $( $(this).attr('href') ).offset().top
-    }, 300 );
+    }, 500 );
 });

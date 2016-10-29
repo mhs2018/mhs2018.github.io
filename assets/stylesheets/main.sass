@@ -16,12 +16,13 @@ $animation-duration: 500ms
 body
     font:
         family: 'Roboto', 'Helvetica Neue', helvetica, verdana, sans-serif
-        size:   20px
+        size:   24px
     text-align: center
-    color: white
+    color: rgba(255,255,255,0.9)
     -webkit-font-smoothing: antialiased
 a
     color: white
+    cursor: pointer
 
 a:hover .material-icons
     animation: pulse $animation-duration infinite ease-in-out alternate
@@ -31,17 +32,19 @@ a:hover .material-icons
     0%
         transform: scale(1)
     100%
-        transform: scale(1.25)
+        transform: scale(1.15)
 
 .material-icons
-    font-size: 40px
-    transition: $animation-duration
-    position: absolute
+    font-size: 3em
+    transition: $animation-duration all ease-in-out
 
 .section-header
     color: $accent-color
     font-size: 2em
-    padding: 0.5em 
+    padding: 0.5em
+
+strong
+    font-weight: 800
 
 // Grid
 .content-section
@@ -81,3 +84,11 @@ a:hover .material-icons
 // Links Section
 #links
     background-color: white
+
+@media screen and (max-width: 760px)
+    body
+        font-size: 20px
+
+@media screen and (max-width: 550px)
+    body
+        font-size: 16px
